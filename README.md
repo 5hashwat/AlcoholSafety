@@ -14,3 +14,5 @@ Our website is easy to navigate and user-friendly, so you can quickly find the i
 Please note that the information provided on our website is for educational purposes only. We encourage responsible drinking and advise you to always drink in moderation. If you feel that you may have a problem with alcohol, please seek help from a medical professional.
 
 Thank you for using our website, and we hope that you find it helpful in your journey towards responsible alcohol consumption.
+
+Written by Shashwat Kale and Saksham Mirchandani
