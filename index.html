@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Alcohol Tracker</title>
+</head>
+
+<body>
+  <script>
+    let count = 0; // Initialize count variable
+    function addCount(blank1) {
+    count+=blank1; // Increment count by parameter
+    count = Math.round(count * 100) / 100
+    document.getElementById("count").innerHTML =count; // Display updated count
+    }
+    document.getElementById("count").innerHTML =count; // Display updated count
+  </script>
+  <script>
+    let sugar = 0; // Initialize count variable
+    function addSugar(blank1) {
+    sugar+=blank1; // Increment count by parameter
+    sugar = Math.round(sugar * 100) / 100
+    document.getElementById("sugar").innerHTML =sugar; // Display updated count
+    }
+    document.getElementById("sugar").innerHTML =sugar; // Display updated count
+  </script>
+  <script>
+    let calories = 0; // Initialize count variable
+    function addCalories(blank1) {
+    calories+=blank1; // Increment count by parameter
+    calories = Math.round(calories * 100) / 100
+    document.getElementById("calories").innerHTML =calories; // Display updated count
+    }
+    document.getElementById("calories").innerHTML =calories; // Display updated count
+  </script>
+  <!-- Header -->
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="#intro">
+            <h1><span>A</span>lcohol <span>S</span>afety</h1>
+          </a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger">
+            <div class="bar"></div>
+          </div>
+          <ul>
+            <li><a href="#intro" data-after="Home">Home</a></li>
+            <li><a href="#drink" data-after="drink">Drink Menu</a></li>
+            <li><a href="#about" data-after="About">What you Drank</a></li>
+            <li><a href="#contact" data-after="Contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Header -->
+
+  <!-- Introduction -->
+  <section id="intro">
+    <div class="intro container">
+      <div>
+        <h1>Alcohol Abuse<span></span></h1>
+        <h1>is a leading cause<span></span></h1>
+        <h1>of unnecesary death <span></span></h1>
+        <h1>Stay educated and safe <span></span></h1>
+        <a href="#drink" type="button" class="cta" >Drink Menu </a>
+      </div>
+    </div>
+  </section>
+  <!-- Introduction  -->
+
+  <!-- Drink Menu -->
+  <section id="drink">
+    <div class="drinks container">
+      <div class="drinks-header">
+        <h1 class="section-title">Drink <span>Menu</span></h1>
+      </div>
+      <div class="all-projects">
+        <div class="drink-item">
+          <div class="drink-info">
+            <h1>Vodka</h1>
+            <h2>Smirnoff</h2>
+            <p>Ingredients: Corn and Water</p>
+            <p>Alcohol: 0.96%</p>
+            <p>Alcohol Content Per Serving: 28.36ml</p>
+            <p>Calories: 96</p>
+            <p>Sugar: 0 grams</p>
+          </div>
+          <div class="drink-img" onclick="addSugar(0); addCalories(96); addCount(28.36)">
+            <img src="./img/vodka.png" alt="img">
+          </div>
+        </div>
+        <div class="drink-item">
+          <div class="drink-info">
+            <h1>Beer</h1>
+            <h2>Heineken</h2>
+            <p>Ingredients: Barley, Hops, and water</p>
+            <p>Alcohol: 0.57%</p>
+            <p>Alcohol Content Per Serving: 16.84ml</p>
+            <p>Calories: 149</p>
+            <p>Sugar: 0 grams</p>
+          </div>
+          <div class="drink-img" onclick="addSugar(8); addCalories(149); addCount(16.84);">
+            <img src="./img/beer.png" alt="img">
+          </div>
+        </div>
+        <div class="drink-item">
+          <div class="drink-info">
+            <h1>Martini</h1>
+            <h2>Cosmopolitan</h2>
+            <p>Ingredients: Vodka Citron, Cointreau, Cranbery Juice, Lime Juice</p>
+            <p>Alcohol: 2.25%</p>
+            <p>Alcohol Content Per Serving: 66.54ml</p>
+            <p>Calories: 167</p>
+            <p>Sugar: 8 grams</p>
+          </div>
+          <div class="drink-img" onclick="addSugar(0); addCalories(167); addCount(66.54);">
+            <img src="./img/martini.png" alt="img">
+          </div>
+        </div>
+        <div class="drink-item">
+          <div class="drink-info">
+            <h1>Rum</h1>
+            <h2>Bacardi Superior</h2>
+            <p>Ingredients: Molasses and Water</p>
+            <p>Alcohol: 0.96%</p>
+            <p>Alcohol Content Per Serving: 28.36ml</p>
+            <p>Calories: 98</p>
+            <p>Sugar: 0 grams</p>
+          </div>
+          <div class="drink-img" onclick="addSugar(0); addCalories(98); addCount(28.36);">
+            <img src="./img/rum.png" alt="img" >
+          </div>
+        </div>
+        <div class="drink-item">
+          <div class="drink-info">
+            <h1>Gin</h1>
+            <h2>Bombay Sapphire</h2>
+            <p>Ingredients: Juniper Berries, Angelica, Almonds, Lemon Peel, and Liquorice</p>
+            <p>Alcohol: 0.96%</p>
+            <p>Alcohol Content Per Serving: 28.36ml</p>
+            <p>Calories: 97</p>
+            <p>Sugar: 0 grams</p>
+          </div>
+          <div class="drink-img" onclick="addSugar(0); addCalories(97); addCount(28.36);">
+            <img src="./img/gin.png" alt="img" >
+          </div>
+        </div>
+        <div class="drink-item">
+          <div class="drink-info">
+            <h1>White Wine</h1>
+            <h2>Chardonnay</h2>
+            <p>Ingredients: Pinot Noir and Gouais Blanc Grapes</p>
+            <p>Alcohol: 0.60%</p>
+            <p>Alcohol Content Per Serving: 20.72ml</p>
+            <p>Calories: 84</p>
+            <p>Sugar: 1 grams</p>
+          </div>
+          <div class="drink-img" onclick="addSugar(1); addCalories(84); addCount(20.72);">
+            <img src="./img/whitewine.png" alt="img" >
+          </div>
+        </div>
+        <div class="drink-item">
+          <div class="drink-info">
+            <h1>Red Wine</h1>
+            <h2>Pinot Noir</h2>
+            <p>Ingredients: Black-Skinned Grapes</p>
+            <p>Alcohol: 0.60%</p>
+            <p>Alcohol Content Per Serving: 20.72ml</p>
+            <p>Calories: 81</p>
+            <p>Sugar: 0 grams</p>
+          </div>
+          <div class="drink-img" onclick="addSugar(1); addCalories(81); addCount(20.72);">
+            <img src="./img/redwine.png" alt="img" >
+          </div>
+        </div>
+        <div class="drink-item">
+          <div class="drink-info">
+            <h1>Brandy</h1>
+            <h2>Hennessy</h2>
+            <p>Ingredients: Ugni Blanc Grapes</p>
+            <p>Alcohol: 1.32%</p>
+            <p>Alcohol Content Per Serving: 39.05ml</p>
+            <p>Calories: 70</p>
+            <p>Sugar: 8 grams</p>
+          </div>
+          <div class="drink-img" onclick="addSugar(8); addCalories(70); addCount(39.05);">
+            <img src="./img/brandy.png" alt="img" >
+          </div>
+        </div>
+        <div class="drink-item">
+          <div class="drink-info">
+            <h1>Tequila</h1>
+            <h2>Patrón</h2>
+            <p>Ingredients: Agave, Water, and Yeast</p>
+            <p>Alcohol: 1.32%</p>
+            <p>Alcohol Content Per Serving: 39.05ml</p>
+            <p>Calories: 69</p>
+            <p>Sugar: 0 grams</p>
+          </div>
+          <div class="drink-img" onclick="addSugar(0); addCalories(69); addCount(39.05)">
+            <img src="./img/tequila.png" alt="img" >
+          </div>
+        </div>
+        <div class="drink-item">
+          <div class="drink-info">
+            <h1>Cocktail</h1>
+            <h2>Margarita</h2>
+            <p>Ingredients: Lime Juice, Tequila, and Triple Sec</p>
+            <p>Alcohol: 1.5%</p>
+            <p>Alcohol Content Per Serving: 44.36ml</p>
+            <p>Calories: 250</p>
+            <p>Sugar: 11.5 grams</p>
+          </div>
+          <div class="drink-img" onclick="addSugar(11.5); addCount(44.36); addCalories(250);">
+            <img src="./img/cocktail.png" alt="img" >
+          </div>
+        </div>
+        <div class="drink-item">
+          <div class="drink-info">
+            <h1>Champagne</h1>
+            <h2>Dom Perignon</h2>
+            <p>Ingredients: Pinot Noir, Chardonnay</p>
+            <p>Alcohol: 0.59%</p>
+            <p>Alcohol Content Per Serving: 17.47ml</p>
+            <p>Calories: 156</p>
+            <p>Sugar: 0 grams</p>
+          </div>
+          <div class="drink-img" onclick="addSugar(0); addCalories(156); addCount(17.47);">
+            <img src="./img/champagne.png" alt="img">
+          </div>
+        </div>
+        <div class="drink-item">
+          <div class="drink-info">
+            <h1>Sake</h1>
+            <h2>Junmai</h2>
+            <p>Ingredients:  Rice, Water, Yeast and Koji</p>
+            <p>Alcohol: 0.75%</p>
+            <p>Alcohol Content Per Serving: 22.18ml</p>
+            <p>Calories: 187</p>
+            <p>Sugar (g): 0</p>
+          </div>
+          <div class="drink-img" onclick="addSugar(0); addCalories(187); addCount(22.18);">
+            <img src="./img/sake.png" alt="img" >
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Drink Menu -->
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="about container">
+      <div class="col-left">
+        <div class="about-img">
+          <img src="./img/drinks.png" alt="img">
+        </div>
+      </div>
+      <div class="col-right">
+        <h1 class="section-title">What you <span>drank</span></h1>
+        <h3>You drank </h3><h4><span id="count">0</span>  mililiters</h4> <h3></h3>
+        <h4><span id="sugar">0</span>  grams of sugar</h4>
+        <h4><span id="calories">0</span>  calories</h4> <h3> of alcohol</h3>
+      </div>
+    </div>
+  </section>
+  <!-- End About Section -->
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="contact container">
+      <div>
+        <h1 class="section-title">Contact <span>info</span></h1>
+      </div>
+      <div class="contact-items">
+        <div class="contact-item">
+          <div class="icon"><img src="./img/phone.png" /></div>
+          <div class="contact-info">
+            <h1>Phone</h1>
+            <h2>+1 416-576-9829</h2>
+            <h2>+1 980-315-7898</h2>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><img src="./img/email.png" /></div>
+          <div class="contact-info">
+            <h1>Email</h1>
+            <h2>SakshamMirchandani@gmail.com</h2>
+            <h2>ShashwatKale13@gmail.com</h2>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon"><img src="./img/address.png" /></div>
+          <div class="contact-info">
+            <h1>Address</h1>
+            <h2>1273 Barberry Green, Oakville, Ontario</h2>
+            <h2>1049 Lindsay Drive, Oakville, Ontario</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Contact Section -->
+
+  <!-- Footer -->
+  <section id="footer">
+    <div class="footer container">
+      <div class="brand">
+        <h1><span>A</span>lcohol <span>S</span>afety</h1>
+      </div>
+      
+      <h2>Drink Responsibly</h2>
+    </div>
+  </section>
+  <!-- End Footer -->
+  <script src="./app.js"></script>
+</body>
+
+</html>
