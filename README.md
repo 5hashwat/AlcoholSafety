@@ -3,11 +3,11 @@ Welcome to the Alcohol Safety website! Our goal is to provide you with an easy a
 
 How to use our website:
 
-Click on an image of your preferred alcoholic beverage.
+1. Click on an image of your preferred alcoholic beverage.
 
-Learn about the total alcohol content, calories, and sugar in your chosen drink.
+2. Learn about the total alcohol content, calories, and sugar in your chosen drink.
 
-Use this information to make informed decisions about your alcohol consumption.
+3. Use this information to make informed decisions about your alcohol consumption.
 
 Our website is easy to navigate and user-friendly, so you can quickly find the information you need. We believe that knowledge is power, and by providing you with this information, we hope to empower you to make healthier choices when it comes to drinking alcohol.
 
